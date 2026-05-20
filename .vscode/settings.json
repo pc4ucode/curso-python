@@ -8,5 +8,7 @@
     "python": "cls ; python -u"
   },
   "code-runner.ignoreSelection": true,
-  "python.defaultInterpreterPath": "python"
+  "python.defaultInterpreterPath": "python",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
 }
