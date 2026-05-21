@@ -1,10 +1,9 @@
 """
-Aula 21 - Operador logico "and"
+Aula 22 - Operador logico "or"
 
 Operadores logicos
 and (e) or (ou) not (nao)
-and - Todas as condicoes precisam ser verdadeiras
-Se qualquer valor for considerado falso,
+OR - qualquer condicao verdadeira avalia toda expresao como verdadeira
 a expressao inteira será avaliada naquele valor
 sao considerados falsy
 0 0.0 '' False
@@ -14,13 +13,12 @@ entrada = input('[E]ntrar [S]air: ')
 senha_digitada = input('Senha: ')
 
 senha_permitida = '123456'
-if entrada == 'E' and senha_digitada == senha_permitida:
+if (entrada == 'E' or entrada == 'e') and senha_digitada == senha_permitida:
     print('Entrar')
 else:
     print('Sair')
 
 # Avalicao de curtto circuito
-print(True and True and True)
-print(bool(0.0))
-print(bool(''))
-print(True and 0 and True)
+senha = input('Senha: ') or 'Sem Senha'
+print(senha)
+print(0 or False or 0 or 'abc' or True)
